@@ -23,9 +23,8 @@ def word_merge():
     else:
         for i in range (x,(y-x)+x):
             merged = merged + word1[i]
-
     return print(merged)
-    
+
 
 if __name__ == "__main__":
     word_merge()
