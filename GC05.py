@@ -1,0 +1,48 @@
+import time
+def demo_algorithms():
+    print ("This is a function designed to demonstrate the 4 basic principles of algorithms.")
+    time.sleep(2)
+    print ("If you encounter any errors, clear the terminal and run the code again.")
+    time.sleep(2)
+    print ("The first is: 'Sequence'.")
+    time.sleep(2)
+    print ("This line prints first.")
+    time.sleep(2)
+    print ("Then this line.")
+    time.sleep(2)
+    print ("And lastly this line.")
+    time.sleep(2)
+    print ("This is because the lines were written in that order during execution.")
+    time.sleep(2)
+    print ("Next is: 'Selection'. The ability to choose the next action between multiple choices.")
+    time.sleep(2.5)
+    choice = str(input("Would you like the phrase 'Hello World!' to be printed? (1 = yes, 2 = no). "))
+    if choice == "1":
+        print ("Hello World!")
+        print ("1 was inputted, the phrase was printed.")
+    elif choice == "2":
+        print ("2 was inputted, the phrase was not printed.")
+    else:
+        print ("Input was not recognised. Moving on.")
+    time.sleep(2.5)
+    print ("Next is: 'Repetition'/'Iteration'. The action of repeating a step more than once.")
+    time.sleep(2)
+    count = int(input(("How many times would you like the phrase 'Hello World!' to be printed? (Numbers only) ")))
+    for i in range(count):
+        print("Hello World!")
+        time.sleep(2)
+    time.sleep(0.5)
+    print (f"'Hello World!' was printed {count} times")
+    time.sleep(2)
+    print ("Iteration can also be used conditionally, in which the code will repeat until a condition is met.")
+    time.sleep(2.5)
+    print ("Lastly: 'Variable'. The action of storing a value in a named variable.")
+    time.sleep(2)
+    variable = input("Whatever you type next will be stored in a variable and printed again. ")
+    time.sleep(2)
+    print (variable)
+    time.sleep(2)
+    print ("End of demonstration.")
+
+if __name__ == "__main__":
+    demo_algorithms()
